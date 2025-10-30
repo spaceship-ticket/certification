@@ -22,8 +22,11 @@ ul {
 
 
 .haikei {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
+    position: relative;
+    top: -20px;
+    z-index: 0;
     background-image: linear-gradient( #01011a,#002d7f);
 }
 
@@ -31,18 +34,18 @@ ul {
 
 
 .waku {
-   width: 60%;
+   width: 70%;
    border: 0px solid #9c9c9c;
    border-radius: 20px;
-    font-family: "Noto Serif JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
+   font-family: "Noto Serif JP", sans-serif;
+   font-size: 12px;
+   font-weight: 200;
    background-color: #c3f7ff;
    padding: 10px;
    box-sizing: border-box;
    position: relative;
    top: 300px;
-   left: 20%;
+   left: 15%;
    display: flex;
    color: #016fff;
    justify-content: center;
@@ -59,9 +62,9 @@ ul {
    color: #FFF;
    background-image: #022797; 
     font-family: "Noto Serif JP", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 18px;
     font-weight: 200;
-
+    z-index: 1;
 }
 
 
