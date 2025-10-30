@@ -1,76 +1,61 @@
-@charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New&display=swap');
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>シリアルコード入力ページ</title>
+<meta name="description" content="">
+<meta property="og:type" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<link rel="icon" href="">
+<link rel="icon" href="" type="image/svg+xml">
+<link rel="apple-touch-icon" href="">
+<link rel="canonical" href="" />
+<!-- css start -->
+<link rel="stylesheet" href="css/destyle.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- css end -->
+</head>
+<body>
+<html>
 
 
 
+<div class="setumei">
+<h4>
+    シリアルコードを入力してください
+</h4>
 
-.body {
-    height: 956px;
-    width: 400px;
-    padding: 0;
-    margin: 0;
-    font-family: "M PLUS 1", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    background-color: rgb(37, 31, 124);
+</div>
+
+<div class="haikei">
+<div class="waku">
+<input id="password-input" type="password" placeholder="シリアルコードを入力" maxlength="11" required>
+<input type='button' value="送信" onclick="check()">
+
+</div>
+<script>
+function check(){
+
+if(document.getElementById("password-input").value=="95614226904"){
+location.href = 'https://www.yahoo.co.jp/';
 }
-ul {
-    list-style: none;
-}
 
-
-.haikei {
-    height: 110vh;
-    width: 100vw;
-    position: relative;
-    top: -20px;
-    z-index: 0;
-    background-image: linear-gradient( #01011a,#002d7f);
-}
-
-
-
-
-.waku {
-   width: 70%;
-   border: 0px solid #9c9c9c;
-   border-radius: 20px;
-   font-family: "Noto Serif JP", sans-serif;
-   font-size: 12px;
-   font-weight: 200;
-   background-color: #c3f7ff;
-   padding: 10px;
-   box-sizing: border-box;
-   position: relative;
-   top: 300px;
-   left: 15%;
-   display: flex;
-   color: #016fff;
-   justify-content: center;
-}
- 
-
-.setumei h4 {
-    font-size: 22px;
-    position: relative;
-    top: 170px;
-    text-align: center;
-    display: flex;
-   justify-content: center;
-   color: #FFF;
-   background-image: #022797; 
-    font-family: "Noto Serif JP", sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-    z-index: 1;
+if(document.getElementById("password-input").value=="5678"){
+location.href = 'https://www.yahoo.co.jp/';
 }
 
 
-.password-input {
-    border: 2px solid #000000;
+
 }
+
+
+</script>
 
 </div>
 </html>
